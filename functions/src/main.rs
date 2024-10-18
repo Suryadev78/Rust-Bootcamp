@@ -1,12 +1,20 @@
 fn main() {
-    let a = 5;
-    let b = 10;
-    let result = add(a,b);
-    let subtraction = subtract(a,b);
-    println!("Result: {}", result);
+    let a = 23;
+    let b = 24;
+   let isEven = IsEven(a,b);
 }
-fn add(a:i32,b:i32)->i32{
-    return a+b;
+fn IsEven(a:i32,b:i32){
+    if(a%2==0){
+        println!("{} is even",a);
+    }
+    else{
+        println!("{} is odd",a)
+    }
+    if (b%2==0){
+    println!("{} is even",b);
+   }
+   else {
+    println!("{} is odd",b);
+
+   }
 }
-fn subtract(a:i32,b:i32)->i32{
-    return a-b; }
