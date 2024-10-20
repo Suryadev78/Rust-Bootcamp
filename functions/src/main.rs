@@ -4,6 +4,8 @@ fn main() {
     check_even_odd(a, b);
     let square_a = square(a);
     println!("Square of {} is {}", a, square_a);
+    let sum = sum_of_squares(a, b);
+    println!("Sum of squares of {} and {} is {}", a, b, sum);
 }
 
 fn check_even_odd(a: i32, b: i32) {
@@ -21,4 +23,8 @@ fn check_even_odd(a: i32, b: i32) {
 
 fn square(a: i32) -> i32 {
     a * a
+}
+
+fn sum_of_squares(a: i32, b: i32) -> i32 {
+    square(a) + square(b)
 }
