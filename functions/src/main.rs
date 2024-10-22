@@ -6,6 +6,8 @@ fn main() {
     println!("Square of {} is {}", a, square_a);
     let sum = sum_of_squares(a, b);
     println!("Sum of squares of {} and {} is {}", a, b, sum);
+    let average = average(a, b);
+    println!("Average of {} and {} is {}", a, b, average);
 }
 
 fn check_even_odd(a: i32, b: i32) {
@@ -27,4 +29,8 @@ fn square(a: i32) -> i32 {
 
 fn sum_of_squares(a: i32, b: i32) -> i32 {
     square(a) + square(b)
+}
+
+fn average(a: i32, b: i32) -> f32 {
+    (a + b) as f32 / 2.0
 }
